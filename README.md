@@ -19,3 +19,26 @@ Hence, for the above analysis I have used “COVID19 Tweets” dataset from www.
 
 Above dataset contains 179,108 data points and 13 features including [user_name, user_location, user_description, user_created, user_followers, user_friends, user_favourites, user_verified, date, text, hashtags, source, is_retweet]
 Link to the dataset:
+https://www.kaggle.com/gpreda/covid19-tweets
+
+###2. Identify the distribution of tweets in the world map
+
+####What are the techniques that you use to map the tweet to a relevant country?
+Provided dataset already had the location column either a country or city, state of the tweet. Hence use mainly geo panda’s python library to take the county, city and state to convert them to the Country code. Then it has been converted to country names and plot the data in a bar chart and visualize it in a choropleth world map to show the demographic distribution of the tweets with heatmap.
+
+For above analysis I have used google colab jupyter notebook to process the code more efficiently. Since it is an cloud environment it provided fast and more processing power to run the NLP algorithms required.
+
+![image](https://user-images.githubusercontent.com/85073848/179394588-b5f47dc0-11ea-4135-9251-8d6388a19d94.png)
+
+![image](https://user-images.githubusercontent.com/85073848/179394653-950084f5-458e-44d5-af3d-53b896da0de0.png)
+
+Up to above step, location column was counted and sorted for first 15 top locations were reported in the dataset. Still some of the states and cities are shown as separate locations.
+
+Using “Geo Text” states and cities were converted in the country codes
+
+![image](https://user-images.githubusercontent.com/85073848/179394681-6ae07cf2-2d83-430a-bdbf-e6ac188a03df.png)
+
+![image](https://user-images.githubusercontent.com/85073848/179394708-706cde78-33a1-498b-9097-414d673ec055.png)
+
+
+
